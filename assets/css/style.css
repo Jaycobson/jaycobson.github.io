@@ -163,55 +163,27 @@ em1{
   background: #18d26e;
 }
 
-/* Improved Mobile Responsive Styles */
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   #header h1 {
-    font-size: 40px; /* Increased from 36px */
+    font-size: 36px;
   }
 
   #header h2 {
-    font-size: 22px; /* Increased from 20px */
-    line-height: 32px; /* Better line spacing */
+    font-size: 20px;
+    line-height: 30px;
   }
 
   #header .social-links {
-    margin-top: 20px; /* Slightly more space */
+    margin-top: 15px;
   }
 
   #header .container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0 20px; /* Add horizontal padding */
   }
 }
 
-/* Additional breakpoint for very small screens */
-@media (max-width: 480px) {
-  #header h1 {
-    font-size: 36px; /* Still readable on very small screens */
-  }
-
-  #header h2 {
-    font-size: 20px;
-    line-height: 28px;
-  }
-  
-  #header .container {
-    padding: 0 15px;
-  }
-}
-
-/* Tablet breakpoint */
-@media (min-width: 769px) and (max-width: 991px) {
-  #header h1 {
-    font-size: 44px;
-  }
-
-  #header h2 {
-    font-size: 23px;
-  }
-}
 
 /* Header Top */
 #header.header-top {
