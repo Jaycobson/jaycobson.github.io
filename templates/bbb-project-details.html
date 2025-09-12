@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>BBB Prediction Project's Page</title>
+    <meta content="Blood-Brain Barrier (BBB) Permeability Prediction using ML models" name="description">
+    <meta content="Machine Learning, Drug Discovery, BBB, XGBoost, LightGBM, SHAP" name="keywords">
+
+    <link href="../assets/img/favicon.png" rel="icon">
+    <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Raleway:300,400,500,600,700|Poppins:300,400,500,600,700"
+        rel="stylesheet">
+
+    <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="../assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <link href="../assets/css/style.css" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #f9fafc;
+        }
+
+        .hero-section {
+            background: linear-gradient(135deg, #e6f0fa, #0095ff);
+            border-radius: 12px;
+            padding: 30px;
+            margin-bottom: 40px;
+            box-shadow: 0 4px 12px rgba(88, 84, 84, 0.05);
+        }
+
+        .portfolio-title {
+            font-size: 30px;
+            font-weight: 700;
+            color: #007bff;
+        }
+
+        .tagline {
+            font-size: 16px;
+            color: #555;
+            margin-bottom: 15px;
+        }
+
+        .section-title {
+            margin-top: 40px;
+            margin-bottom: 20px;
+            font-weight: 600;
+            font-size: 22px;
+            color: #007bff;
+            display: flex;
+            align-items: center;
+        }
+
+        .section-title i {
+            color: #007bff;
+            margin-right: 8px;
+            font-size: 20px;
+        }
+
+        .highlight-box {
+            background: #0095ff;
+            border-left: 8px solid #17c964;
+            /* teal accent */
+            color: #fff;
+            padding: 15px;
+            margin-top: 15px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            font-size: 15px;
+        }
+
+        .metric-card {
+            background: linear-gradient(135deg, #007bff, #00c6ff);
+            color: #fff;
+            border-radius: 10px;
+            padding: 25px;
+            text-align: center;
+            transition: transform 0.2s ease;
+        }
+
+        .metric-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .metric-card h4 {
+            margin: 0;
+            font-size: 26px;
+            font-weight: bold;
+        }
+
+        .metric-card p {
+            margin: 8px 0 0;
+            font-size: 15px;
+            opacity: 0.9;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul li::before {
+            content: "✔ ";
+            color: #17c964;
+            font-weight: bold;
+        }
+
+        img {
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* GitHub button style */
+        .github-link {
+            display: inline-block;
+            background: #24292e;
+            color: #fff;
+            padding: 8px 14px;
+            border-radius: 6px;
+            font-size: 14px;
+            text-decoration: none;
+            transition: background 0.2s ease;
+        }
+
+        .github-link:hover {
+            background: #444d56;
+            text-decoration: none;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+
+    <main id="main">
+
+        <div id="portfolio-details" class="portfolio-details">
+            <div class="container">
+
+                <!-- Hero Section -->
+                <div class="hero-section row align-items-center">
+                    <div class="col-lg-8">
+                        <h2 class="portfolio-title">Blood-Brain Barrier (BBB) Permeability Prediction</h2>
+                        <p class="tagline">Using machine learning to accelerate CNS drug discovery</p>
+                        <img src="../assets/img/portfolio/bbb.png" alt="BBB Project Image" class="img-fluid mt-3">
+                    </div>
+                    <div class="col-lg-4 portfolio-info">
+                        <h3>Project Info</h3>
+                        <p><b>Category:</b> Machine Learning</p>
+                        <p><a href="https://github.com/Jaycobson/outreachy-contributions" target="_blank"
+                                class="github-link"><i class="bi bi-github"></i> View on GitHub</a></p>
+                        <div class="highlight-box">
+                            <p>This project applies ML to predict if compounds can cross the <b>blood-brain barrier</b>,
+                                a key challenge in developing treatments for neurological disorders.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Overview -->
+                <div class="section-title"><i class="bi bi-bullseye"></i> Overview</div>
+                <p>Using the <b>BBB_Martins dataset</b> (2030 compounds), this project develops ML models that classify
+                    compounds as <b>BBB-permeable</b> or <b>non-permeable</b>. The pipeline covers <i>data acquisition,
+                        molecular featurization, model training, evaluation, and interpretability</i>.</p>
+
+                <!-- Dataset -->
+                <div class="section-title"><i class="bi bi-database"></i> Dataset</div>
+                <ul>
+                    <li>Total compounds: <b>2030</b></li>
+                    <li>Permeable: <b>1551 (76.4%)</b></li>
+                    <li>Non-permeable: <b>479 (23.6%)</b></li>
+                    <li>Source: <a href="https://tdcommons.ai" target="_blank">TDC</a></li>
+                </ul>
+
+                <!-- Methods -->
+                <div class="section-title"><i class="bi bi-gear"></i> Methods</div>
+                <p>Two molecular featurizers were explored:</p>
+                <ul>
+                    <li><b>Uni-Mol (SE(3) Transformer)</b> – 3D structure embeddings</li>
+                    <li><b>DrugTax</b> – taxonomy-based binary molecular features</li>
+                </ul>
+                <p>Models implemented: <b>XGBoost, LightGBM, Logistic Regression</b>.</p>
+
+                <!-- Results -->
+                <div class="section-title"><i class="bi bi-bar-chart-line"></i> Results</div>
+                <div class="row text-center">
+                    <div class="col-md-4">
+                        <div class="metric-card">
+                            <h4>85.7%</h4>
+                            <p>Best Accuracy</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="metric-card">
+                            <h4>0.91</h4>
+                            <p>Best F1 Score</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="metric-card">
+                            <h4>XGBoost / LGBM</h4>
+                            <p>Top Models</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Conclusion -->
+                <div class="section-title"><i class="bi bi-lightbulb"></i> Conclusion</div>
+                <p>This project shows that combining feature-rich molecular featurizers with gradient boosting models
+                    yields accurate predictions of BBB permeability. These insights can accelerate <b>CNS drug
+                        design</b>, support <b>neurotoxicity screening</b>, and enable <b>drug repurposing</b>.</p>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- Vendor JS Files -->
+    <script src="../assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="../assets/vendor/waypoints/noframework.waypoints.js"></script>
+    <script src="../assets/vendor/php-email-form/validate.js"></script>
+    <script src="../assets/js/main.js"></script>
+
+</body>
+
+</html>

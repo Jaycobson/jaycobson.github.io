@@ -16,6 +16,7 @@ body {
   position: relative;
   background: none;
 }
+
 .icon-list {
   list-style: none;
   padding: 0;
@@ -75,9 +76,11 @@ h5,
 h6 {
   font-family: "Raleway", sans-serif;
 }
+
 .portfolio-image {
   width: 98%;
-  height: 98%; /* Adjust the height as needed */
+  height: 98%;
+  /* Adjust the height as needed */
 }
 
 
@@ -120,7 +123,7 @@ h6 {
   color: rgba(255, 255, 255, 0.8);
 }
 
-#header h3 span{
+#header h3 span {
   color: #fff;
   border-bottom: 2px solid #18d26e;
   padding-bottom: 6px;
@@ -136,22 +139,54 @@ h6 {
   display: flex;
 }
 
+
+/* Update your header colors */
+#header h1 {
+  color: #ffffff;
+  text-shadow: 0 0 20px rgba(0, 212, 255, 0.3);
+  /* Subtle glow */
+}
+
+#header h2 {
+  color: #00d4ff;
+  /* Vibrant secondary color */
+}
+
+.navbar a {
+  color: #b8c5d1;
+  /* Better contrast than black */
+}
+
+.navbar a:hover {
+  color: #00d4ff;
+}
+
+#header .social-links a {
+  background: rgba(0, 212, 255, 0.1);
+  color: #00d4ff;
+}
+
+#header .social-links a:hover {
+  background: #00d4ff;
+  color: #000;
+}
+
 img.img-fluid {
   border-radius: 50px;
 }
 
-em1{
+em1 {
   white-space: nowrap;
 }
 
 #header .social-links a {
   font-size: 16px;
-  margin-top:-20px;
+  margin-top: -20px;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: rgba(255, 255, 255, 0.1);
-  color: black;
+  background: rgba(95, 100, 96, 0.1);
+  color: rgb(0, 0, 0);
   line-height: 1;
   margin-right: 8px;
   border-radius: 50%;
@@ -286,8 +321,9 @@ em1{
   width: 0px;
   transition: all 0.3s ease-in-out 0s;
 }
-.navbar{
-  box-shadow:none;
+
+.navbar {
+  box-shadow: none;
 }
 
 .navbar a:hover:before,
@@ -400,7 +436,7 @@ section.section-show {
 }
 
 section .container {
-  background:rgb(60, 61, 14);
+  background: rgb(60, 61, 14);
   padding: 30px;
 }
 
@@ -549,8 +585,8 @@ section .container {
 
 .skills .progress-bar-wrap {
   background: rgba(255, 255, 255, 0.2);
-  border-radius:5px;
-  margin-left:60px;
+  border-radius: 5px;
+  margin-left: 60px;
 }
 
 .skills .progress-bar {
@@ -558,9 +594,9 @@ section .container {
   height: 10px;
   transition: 0.9s;
   background-color: #18d26e;
-  border-radius:5px;
-  margin-top:-18.5px;
-  margin-bottom:10px;
+  border-radius: 5px;
+  margin-top: -18.5px;
+  margin-bottom: 10px;
 }
 
 .coding-profiles .icon-box {
@@ -589,20 +625,24 @@ section .container {
 .coding-profiles .icon-box:hover {
   background: rgba(255, 255, 255, 0.12);
 }
+
 .codechef-logo {
   width: 60%;
   margin-top: -25px;
   margin-left: 100px;
 }
+
 .gfg-logo {
-    margin-top: -23px;
-    margin-left: 139px;
+  margin-top: -23px;
+  margin-left: 139px;
 }
+
 .hackerrank-logo {
   width: 39%;
   margin-top: -28px;
   margin-left: 119px;
 }
+
 .frameworks .icon-box {
   display: flex;
   align-items: center;
@@ -625,6 +665,7 @@ section .container {
   font-size: 16px;
   color: #fff;
 }
+
 .framework-icon-box p {
   color: white;
   margin-top: -10px;
@@ -633,21 +674,26 @@ section .container {
   margin-bottom: -20px;
   margin-left: 10px;
 }
+
 .icon-box svg {
-  height: 50px; /* Set the SVG height to 100% of its parent (.icon-box) */
-  width: auto; /* Let the SVG adjust its width proportionally */
+  height: 50px;
+  /* Set the SVG height to 100% of its parent (.icon-box) */
+  width: auto;
+  /* Let the SVG adjust its width proportionally */
 }
 
 .frameworks .icon-box:hover {
   background: rgba(12, 255, 125, 0.12);
 }
+
 .coding-profiles .icon-box h3 {
   font-weight: 700;
-  margin-bottom:-9px;
+  margin-bottom: -9px;
   line-height: 1;
   font-size: 16px;
   color: #fff;
 }
+
 /*--------------------------------------------------------------
 # Interests
 --------------------------------------------------------------*/
@@ -828,7 +874,7 @@ section .container {
   background: rgba(204, 204, 204, 0.1);
   padding: 80px 20px;
   transition: all ease-in-out 0.3s;
-  margin-top:20px;
+  margin-top: 20px;
 }
 
 .services .icon-box .icon {
@@ -1139,7 +1185,7 @@ section .container {
   border-radius: 10px;
   padding: 20px;
   margin-bottom: 20px;
-  box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
 }
 
@@ -1195,6 +1241,7 @@ section .container {
 .project-links a i {
   margin-right: 5px;
 }
+
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
@@ -1213,10 +1260,12 @@ section .container {
   float: left;
   background: rgba(255, 255, 255, 0.1);
 }
+
 .small-transparent-image {
   max-width: 33px;
-  max-height:43px;
-  opacity: 0.7; /* Adjust the opacity as per your requirement */
+  max-height: 43px;
+  opacity: 0.7;
+  /* Adjust the opacity as per your requirement */
 }
 
 

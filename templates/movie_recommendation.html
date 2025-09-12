@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Movie Recommendation Project</title>
+    <meta content="Content-Based Movie Recommendation System using TF-IDF Vectorization and Cosine Similarity"
+        name="description">
+    <meta content="Movie Recommendation, Recommender Systems, TF-IDF, Cosine Similarity, Machine Learning, NLP"
+        name="keywords">
+
+    <link href="../assets/img/favicon.png" rel="icon">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Raleway:300,400,500,600,700|Poppins:300,400,500,600,700"
+        rel="stylesheet">
+
+    <!-- Vendor CSS -->
+    <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- Main CSS -->
+    <link href="../assets/css/style.css" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #f9fafc;
+        }
+
+        .hero-section {
+            background: linear-gradient(135deg, #ffe6e6, #ff4d4d);
+            border-radius: 12px;
+            padding: 30px;
+            margin-bottom: 40px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        }
+
+        .portfolio-title {
+            font-size: 30px;
+            font-weight: 700;
+            color: #ff3333;
+        }
+
+        .tagline {
+            font-size: 16px;
+            color: #444;
+            margin-bottom: 15px;
+        }
+
+        .section-title {
+            margin-top: 40px;
+            margin-bottom: 20px;
+            font-weight: 600;
+            font-size: 22px;
+            color: #ff3333;
+            display: flex;
+            align-items: center;
+        }
+
+        .section-title i {
+            color: #ff3333;
+            margin-right: 8px;
+            font-size: 20px;
+        }
+
+        .highlight-box {
+            background: #ff4d4d;
+            border-left: 8px solid #ffc107;
+            color: #fff;
+            padding: 15px;
+            margin-top: 15px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            font-size: 15px;
+        }
+
+        .metric-card {
+            background: linear-gradient(135deg, #ff4d4d, #ff9999);
+            color: #fff;
+            border-radius: 10px;
+            padding: 25px;
+            text-align: center;
+            transition: transform 0.2s ease;
+        }
+
+        .metric-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .metric-card h4 {
+            margin: 0;
+            font-size: 26px;
+            font-weight: bold;
+        }
+
+        .metric-card p {
+            margin: 8px 0 0;
+            font-size: 15px;
+            opacity: 0.9;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul li::before {
+            content: "✔ ";
+            color: #ffc107;
+            font-weight: bold;
+        }
+
+        img {
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .github-link {
+            display: inline-block;
+            background: #24292e;
+            color: #fff;
+            padding: 8px 14px;
+            border-radius: 6px;
+            font-size: 14px;
+            text-decoration: none;
+            transition: background 0.2s ease;
+        }
+
+        .github-link:hover {
+            background: #444d56;
+            text-decoration: none;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+
+    <main id="main">
+
+        <div id="portfolio-details" class="portfolio-details">
+            <div class="container">
+
+                <!-- Hero Section -->
+                <div class="hero-section row align-items-center">
+                    <div class="col-lg-8">
+                        <h2 class="portfolio-title">Movie Recommendation System</h2>
+                        <p class="tagline">Content-based film recommendations using TF-IDF & Cosine Similarity</p>
+                        <img src="../assets/img/portfolio/movie_recommendation.jpg" alt="Movie Recommendation Project"
+                            class="img-fluid mt-3" style="width: 50%; height: auto;">
+
+                    </div>
+                    <div class="col-lg-4 portfolio-info">
+                        <h3>Project Info</h3>
+                        <p><b>Category:</b> Recommender Systems</p>
+                        <p>
+                            <a href="https://github.com/Jaycobson/movie_recommendation" target="_blank"
+                                class="github-link">
+                                <i class="bi bi-github"></i> View on GitHub
+                            </a>
+                        </p>
+                        <div class="highlight-box">
+                            <p>This project recommends movies by analyzing textual features such as <b>title, cast,
+                                    keywords, and
+                                    genres</b>, applying TF-IDF vectorization and cosine similarity to compute
+                                similarity scores.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Overview -->
+                <div class="section-title"><i class="bi bi-bullseye"></i> Overview</div>
+                <p>The system implements a <b>content-based movie recommendation model</b>. It computes similarity
+                    between
+                    movies using textual attributes and suggests top movies similar to a given input title. A secondary
+                    popularity-based method is also included for trending movie suggestions.</p>
+
+                <!-- Data Preprocessing -->
+                <div class="section-title"><i class="bi bi-database"></i> Data Preparation</div>
+                <ul>
+                    <li>Handled missing values using mean (numerical) and mode/“unknown” (categorical).</li>
+                    <li>Performed exploratory data analysis and visualization (budget vs revenue, distributions).</li>
+                    <li>Created <b>combined_features</b> column by merging title, keywords, cast, and genres.</li>
+                </ul>
+
+                <!-- Methods -->
+                <div class="section-title"><i class="bi bi-gear"></i> Methods</div>
+                <ul>
+                    <li><b>TF-IDF Vectorization</b> – transforms textual features into weighted vectors.</li>
+                    <li><b>Cosine Similarity</b> – measures similarity between movie vectors.</li>
+                    <li><b>Popularity-based filtering</b> – recommends trending/high-rated movies in the same genre.
+                    </li>
+                </ul>
+
+                <!-- Results -->
+                <div class="section-title"><i class="bi bi-bar-chart-line"></i> Results</div>
+                <div class="row text-center">
+                    <div class="col-md-4">
+                        <div class="metric-card">
+                            <h4>10</h4>
+                            <p>Top-N Recommendations per query</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="metric-card">
+                            <h4>TF-IDF + Cosine</h4>
+                            <p>Main Algorithm</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="metric-card">
+                            <h4>PowerBI</h4>
+                            <p><a href="https://github.com/Jaycobson/movie_recommendation/blob/main/image.jpg">Visualization
+                                    Link</a></a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Example Usage -->
+                <div class="section-title"><i class="bi bi-play-circle"></i> Example Usage</div>
+                <p><code>recommend_movies("Avatar", top_n=5)</code></p>
+                <p><b>Output:</b></p>
+                <ul>
+                    <li>Avengers: Endgame</li>
+                    <li>Interstellar</li>
+                    <li>Guardians of the Galaxy</li>
+                    <li>Star Wars: The Force Awakens</li>
+                    <li>The Martian</li>
+                </ul>
+
+                <!-- Challenges -->
+                <div class="section-title"><i class="bi bi-exclamation-triangle"></i> Challenges</div>
+                <p>
+                    A major challenge was handling <b>missing values</b>. While mean/mode imputation worked for quick
+                    fixes,
+                    advanced NLP tools like <b>NLTK, spaCy, or LLMs</b> could better infer missing keywords or overview
+                    details in
+                    the future. The <b>homepage column</b> also had 60%+ null values, which was not useful for modeling
+                    and was
+                    left untouched.
+                </p>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- Vendor JS -->
+    <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="../assets/js/main.js"></script>
+
+</body>
+
+</html>
