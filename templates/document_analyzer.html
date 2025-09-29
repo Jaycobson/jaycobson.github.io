@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>DocuMind AI Analyzer Project's Page</title>
+    <meta content="DocuMind AI - Intelligent document analysis and question answering system" name="description">
+    <meta content="Document Analyzer, AI, Gemini, Streamlit, NLP, RAG, Vector Store" name="keywords">
+
+    <link href="../assets/img/favicon.png" rel="icon">
+    <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Raleway:300,400,500,600,700|Poppins:300,400,500,600,700"
+        rel="stylesheet">
+
+    <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="../assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <link href="../assets/css/style.css" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #f9fafc;
+        }
+
+        .hero-section {
+            background: linear-gradient(135deg, #f0e6ff, #764ba2);
+            border-radius: 12px;
+            padding: 30px;
+            margin-bottom: 40px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        }
+
+        .portfolio-title {
+            font-size: 30px;
+            font-weight: 700;
+            color: #764ba2;
+        }
+
+        .tagline {
+            font-size: 16px;
+            color: #444;
+            margin-bottom: 15px;
+        }
+
+        .section-title {
+            margin-top: 40px;
+            margin-bottom: 20px;
+            font-weight: 600;
+            font-size: 22px;
+            color: #764ba2;
+            display: flex;
+            align-items: center;
+        }
+
+        .section-title i {
+            color: #764ba2;
+            margin-right: 8px;
+            font-size: 20px;
+        }
+
+        .highlight-box {
+            background: #764ba2;
+            border-left: 8px solid #667eea;
+            color: #fff;
+            padding: 15px;
+            margin-top: 15px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            font-size: 15px;
+        }
+
+        .metric-card {
+            background: linear-gradient(135deg, #764ba2, #667eea);
+            color: #fff;
+            border-radius: 10px;
+            padding: 25px;
+            text-align: center;
+            transition: transform 0.2s ease;
+        }
+
+        .metric-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .metric-card h4 {
+            margin: 0;
+            font-size: 26px;
+            font-weight: bold;
+        }
+
+        .metric-card p {
+            margin: 8px 0 0;
+            font-size: 15px;
+            opacity: 0.9;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul li::before {
+            content: "✔ ";
+            color: #667eea;
+            font-weight: bold;
+        }
+
+        img {
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* GitHub button style */
+        .github-link {
+            display: inline-block;
+            background: #24292e;
+            color: #fff;
+            padding: 8px 14px;
+            border-radius: 6px;
+            font-size: 14px;
+            text-decoration: none;
+            transition: background 0.2s ease;
+        }
+
+        .github-link:hover {
+            background: #444d56;
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .tech-badge {
+            display: inline-block;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            color: white;
+            padding: 0.4rem 0.8rem;
+            margin: 0.25rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+    </style>
+</head>
+
+<body>
+
+    <main id="main">
+
+        <div id="portfolio-details" class="portfolio-details">
+            <div class="container">
+
+                <!-- Hero Section -->
+                <div class="hero-section row align-items-center">
+                    <div class="col-lg-8">
+                        <h2 class="portfolio-title">DocuMind AI - Intelligent Document Analyzer</h2>
+                        <p class="tagline">Advanced document analysis with AI-powered question answering and insights
+                            extraction</p>
+                        <img src="../assets/img/portfolio/documind.jpg" alt="Document Analyzer Image"
+                            class="img-fluid mt-3">
+                    </div>
+                    <div class="col-lg-4 portfolio-info">
+                        <h3>Project Info</h3>
+                        <p><b>Category:</b> AI, NLP, RAG, Document Intelligence</p>
+                        <p><a href="https://github.com/Jaycobson/documind-ai" target="_blank" class="github-link"><i
+                                    class="bi bi-github"></i> View on GitHub</a></p>
+                        <p><a href="https://documind-ai.streamlit.app/" target="_blank" class="github-link"
+                                style="background:#764ba2;"><i class="bi bi-box-arrow-up-right"></i> Live Demo</a></p>
+                        <div class="highlight-box">
+                            <p>This application uses <b>RAG (Retrieval-Augmented Generation)</b> to analyze documents
+                                and answer questions with <b>context-aware responses</b>, keyword extraction, and visual
+                                analytics – perfect for research, analysis, and document understanding.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Overview -->
+                <div class="section-title"><i class="bi bi-bullseye"></i> Overview</div>
+                <p>
+                    DocuMind AI leverages <b>Google's Gemini AI</b> and advanced <b>vector embeddings</b> to transform
+                    how you interact with documents.
+                    Upload PDFs, DOCX, or TXT files and ask natural language questions to extract insights, summaries,
+                    and specific information instantly.
+                    The system uses <b>FAISS vector store</b> for efficient semantic search and <b>LangChain</b> for
+                    intelligent question answering.
+                </p>
+
+                <!-- Features -->
+                <div class="section-title"><i class="bi bi-stars"></i> Key Features</div>
+                <ul>
+                    <li>Support for <b>multiple file formats</b> (PDF, DOCX, TXT)</li>
+                    <li><b>Intelligent chunking</b> with recursive text splitting</li>
+                    <li><b>Vector embeddings</b> using Google's text-embedding-004 model</li>
+                    <li><b>Semantic search</b> powered by FAISS vector store</li>
+                    <li><b>Keyword extraction</b> with frequency analysis</li>
+                    <li><b>Word cloud visualization</b> for document insights</li>
+                    <li><b>Context-aware Q&A</b> using Gemini 2.5 Pro</li>
+                    <li><b>Document statistics</b> and analytics dashboard</li>
+                    <li><b>Real-time processing</b> with progress tracking</li>
+                </ul>
+
+                <!-- Technology Stack -->
+                <div class="section-title"><i class="bi bi-code-square"></i> Technology Stack</div>
+                <div style="margin-bottom: 20px;">
+                    <span class="tech-badge">Python</span>
+                    <span class="tech-badge">Streamlit</span>
+                    <span class="tech-badge">LangChain</span>
+                    <span class="tech-badge">Google Gemini AI</span>
+                    <span class="tech-badge">FAISS</span>
+                    <span class="tech-badge">PyPDF2</span>
+                    <span class="tech-badge">python-docx</span>
+                    <span class="tech-badge">WordCloud</span>
+                    <span class="tech-badge">Plotly</span>
+                    <span class="tech-badge">Matplotlib</span>
+                </div>
+
+                <!-- How it Works -->
+                <div class="section-title"><i class="bi bi-gear"></i> How it Works</div>
+                <ol>
+                    <li><b>Document Upload:</b> Upload one or multiple documents (PDF, DOCX, or TXT files)</li>
+                    <li><b>Text Extraction:</b> System extracts and processes text from all uploaded files</li>
+                    <li><b>Intelligent Chunking:</b> Text is split into optimal chunks with overlap for context
+                        preservation</li>
+                    <li><b>Vector Embedding:</b> Creates semantic embeddings using Google's text-embedding-004 model
+                    </li>
+                    <li><b>Vector Store Creation:</b> Stores embeddings in FAISS for fast similarity search</li>
+                    <li><b>Analysis:</b> Extracts keywords, generates statistics, and creates visualizations</li>
+                    <li><b>Question Answering:</b> Ask questions and get AI-powered answers based on document context
+                    </li>
+                    <li><b>Semantic Search:</b> Retrieves most relevant document sections for each query</li>
+                </ol>
+
+                <!-- Technical Implementation -->
+                <div class="section-title"><i class="bi bi-cpu"></i> Technical Implementation</div>
+                <p>
+                    The system implements a sophisticated <b>RAG (Retrieval-Augmented Generation)</b> pipeline:
+                </p>
+                <ul>
+                    <li><b>Document Processing:</b> Multi-format support with specialized extractors for PDF, DOCX, and
+                        TXT</li>
+                    <li><b>Text Chunking:</b> RecursiveCharacterTextSplitter with 1500 token chunks and 200 token
+                        overlap</li>
+                    <li><b>Embeddings:</b> Google's text-embedding-004 model for high-quality semantic representations
+                    </li>
+                    <li><b>Vector Store:</b> FAISS for efficient similarity search with persistent storage</li>
+                    <li><b>LLM Chain:</b> Custom prompt template with Gemini 2.5 Pro for accurate responses</li>
+                    <li><b>NLP Analytics:</b> Custom keyword extraction with stop word filtering and frequency analysis
+                    </li>
+                    <li><b>Visualization:</b> Word clouds and interactive charts for document insights</li>
+                </ul>
+
+                <!-- Results -->
+                <div class="section-title"><i class="bi bi-bar-chart-line"></i> Capabilities</div>
+                <div class="row text-center">
+                    <div class="col-md-3">
+                        <div class="metric-card">
+                            <h4>Multi-Format</h4>
+                            <p>PDF, DOCX, TXT Support</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="metric-card">
+                            <h4>Smart Search</h4>
+                            <p>Vector-Based Retrieval</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="metric-card">
+                            <h4>AI-Powered</h4>
+                            <p>Gemini 2.5 Pro Model</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="metric-card">
+                            <h4>Real-Time</h4>
+                            <p>Instant Analysis & Insights</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Use Cases -->
+                <div class="section-title"><i class="bi bi-lightbulb"></i> Use Cases</div>
+                <ul>
+                    <li><b>Research:</b> Quickly extract information from academic papers and research documents</li>
+                    <li><b>Legal:</b> Analyze contracts, agreements, and legal documents with Q&A</li>
+                    <li><b>Business:</b> Process reports, proposals, and business documents efficiently</li>
+                    <li><b>Education:</b> Study materials, textbooks, and course documents with interactive learning
+                    </li>
+                    <li><b>Content Analysis:</b> Extract insights and keywords from large document collections</li>
+                    <li><b>Knowledge Management:</b> Build searchable knowledge bases from document repositories</li>
+                </ul>
+
+                <!-- Conclusion -->
+                <div class="section-title"><i class="bi bi-check-circle"></i> Conclusion</div>
+                <p>
+                    DocuMind AI represents the cutting edge of <b>document intelligence</b>, combining advanced NLP,
+                    vector embeddings,
+                    and generative AI to create a powerful document analysis platform. By leveraging <b>RAG
+                        architecture</b>,
+                    the system provides accurate, context-aware responses while maintaining efficiency and scalability.
+                    Whether for research, business analysis, or knowledge extraction, DocuMind AI transforms static
+                    documents
+                    into interactive, queryable knowledge bases.
+                </p>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- Vendor JS Files -->
+    <script src="../assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="../assets/vendor/waypoints/noframework.waypoints.js"></script>
+    <script src="../assets/vendor/php-email-form/validate.js"></script>
+    <script src="../assets/js/main.js"></script>
+
+</body>
+
+</html>
